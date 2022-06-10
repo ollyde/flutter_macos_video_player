@@ -1,0 +1,11 @@
+{
+  "name": "FlutterFire - MOVED",
+  "platforms": [
+    "Android",
+    "iOS"
+  ],
+  "content": "FlutterFire.md",
+  "related": [
+    "FirebaseExtended/flutterfire"
+  ]
+}
