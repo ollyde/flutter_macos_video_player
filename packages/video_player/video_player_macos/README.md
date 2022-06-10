@@ -15,6 +15,11 @@ git:
     path: packages/video_player/video_player_macos
 ```
 
+You can also use
+```
+video_player_macos: 1.0.3
+```
+
 I would suggest using a cominbation like such in your pub.dev
 (For all platforms except Windows)
 

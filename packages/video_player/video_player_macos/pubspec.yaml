@@ -1,6 +1,6 @@
 name: video_player_macos
 description: MacOS implementation of the video_player plugin.
-version: 1.0.2
+version: 1.0.3
 homepage: https://github.com/ollydixon/flutter_macos_video_player
 
 flutter:
