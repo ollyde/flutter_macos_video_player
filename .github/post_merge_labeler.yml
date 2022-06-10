@@ -1,2 +1,0 @@
-'needs-publishing':
-  - packages/**/pubspec.yaml
