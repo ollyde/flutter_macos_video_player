@@ -1,6 +1,9 @@
 
 A working version of video player for MacOS only. Works with other libraries.
 
+You must also include video_player: ^2.4.4 as a base.
+This will work with chewie and other video overlays.
+
 Based on Flutter video player.
 
 Needs addtional maintanence. Please make PRs.
