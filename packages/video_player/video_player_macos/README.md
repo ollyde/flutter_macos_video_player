@@ -1,34 +1,34 @@
-# video_player_macos
 
-The macos implementation of [`video_player`][1].
+A working version of video player for MacOS only. Works with other libraries.
 
-## Usage
+You must also include video_player: ^2.4.4 as a base.
+This will work with chewie and other video overlays.
 
-### Import the package
+Based on Flutter video player.
 
-This package has been endorsed, meaning that you only need to add `video_player`
-as a dependency in your `pubspec.yaml`. It will be automatically included in your app
-when you depend on `package:video_player`.
+Needs addtional maintanence. Please make PRs.
 
-This is what the above means to your `pubspec.yaml`:
-
-```yaml
-...
-dependencies:
-  ...
-  video_player: ^2.0.3
-  ...
+```
+video_player_macos:
+git:
+    url: https://github.com/ollydixon/flutter_macos_video_player
+    path: packages/video_player/video_player_macos
 ```
 
-If you wish to use the macos package only, you can add  `video_player_macos` as a
-dependency:
+I would suggest using a cominbation like such in your pub.dev
+(For all platforms except Windows)
 
-```yaml
-...
-dependencies:
-  ...
-  video_player_macos: ^0.0.1
-  ...
 ```
+# For iOS and Android
+better_player: ^0.0.83
 
-[1]: ../video_player/video_player
+# For Web 
+video_player: ^2.4.4
+chewie: ^1.3.3
+
+# (Same implementation as video_player)
+video_player_macos:
+git:
+    url: /Users/oliverdixon/Downloads/plugins
+    path: packages/video_player/video_player_macos
+```
