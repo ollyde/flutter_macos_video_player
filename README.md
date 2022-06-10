@@ -13,6 +13,7 @@ git:
 ```
 
 I would suggest using a cominbation like such in your pub.dev
+(For all platforms except Windows)
 
 ```
 # For iOS and Android
