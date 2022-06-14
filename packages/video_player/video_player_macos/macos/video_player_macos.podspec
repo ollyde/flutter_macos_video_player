@@ -4,7 +4,7 @@
 Pod::Spec.new do |s|
   s.name             = 'video_player_macos'
   s.version          = '0.0.1'
-  s.summary          = 'Flutter macOS Video Player'
+  s.summary          = 'Flutter MacOS Video Player'
   s.description      = <<-DESC
 A Flutter plugin for playing back video on a Widget surface.
 Downloaded by pub (not CocoaPods).

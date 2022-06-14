@@ -1,4 +1,3 @@
-
 A working version of video player for MacOS only. Works with other libraries.
 
 You must also include video_player: ^2.4.4 as a base.
@@ -18,7 +17,7 @@ git:
 You can also use
 
 ```
-video_player_macos: 1.0.3
+video_player_macos: 1.0.6
 ```
 
 I would suggest using a cominbation like such in your pub.dev
@@ -29,14 +28,9 @@ You will need to write a different view for each, spanning
 ```
 # For iOS and Android
 better_player: ^0.0.83
-
 # For Web 
 video_player: ^2.4.4
 chewie: ^1.3.3
-
-# (Same implementation as video_player)
-video_player_macos:
-git:
-    url: /Users/oliverdixon/Downloads/plugins
-    path: packages/video_player/video_player_macos
+# This library
+video_player_macos: 1.0.6
 ```
