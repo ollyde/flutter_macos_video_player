@@ -199,8 +199,8 @@ class MixWithOthersMessage {
   }
 }
 
-class _AVFoundationVideoPlayerApiCodec extends StandardMessageCodec {
-  const _AVFoundationVideoPlayerApiCodec();
+class _VideoPlayerMacOsApiCodec extends StandardMessageCodec {
+  const _VideoPlayerMacOsApiCodec();
   @override
   void writeValue(WriteBuffer buffer, Object? value) {
     if (value is CreateMessage) {
@@ -252,19 +252,19 @@ class _AVFoundationVideoPlayerApiCodec extends StandardMessageCodec {
   }
 }
 
-class AVFoundationVideoPlayerApi {
-  /// Constructor for [AVFoundationVideoPlayerApi].  The [binaryMessenger] named argument is
+class VideoPlayerMacOsApi {
+  /// Constructor for [VideoPlayerMacOsApi].  The [binaryMessenger] named argument is
   /// available for dependency injection.  If it is left null, the default
   /// BinaryMessenger will be used which routes to the host platform.
-  AVFoundationVideoPlayerApi({BinaryMessenger? binaryMessenger})
+  VideoPlayerMacOsApi({BinaryMessenger? binaryMessenger})
       : _binaryMessenger = binaryMessenger;
   final BinaryMessenger? _binaryMessenger;
 
-  static const MessageCodec<Object?> codec = _AVFoundationVideoPlayerApiCodec();
+  static const MessageCodec<Object?> codec = _VideoPlayerMacOsApiCodec();
 
   Future<void> initialize() async {
     final BasicMessageChannel<Object?> channel = BasicMessageChannel<Object?>(
-        'dev.flutter.pigeon.AVFoundationVideoPlayerApi.initialize', codec,
+        'dev.flutter.pigeon.VideoPlayerMacOsApi.initialize', codec,
         binaryMessenger: _binaryMessenger);
     final List<Object?>? replyList = await channel.send(null) as List<Object?>?;
     if (replyList == null) {
@@ -285,7 +285,7 @@ class AVFoundationVideoPlayerApi {
 
   Future<TextureMessage> create(CreateMessage arg_msg) async {
     final BasicMessageChannel<Object?> channel = BasicMessageChannel<Object?>(
-        'dev.flutter.pigeon.AVFoundationVideoPlayerApi.create', codec,
+        'dev.flutter.pigeon.VideoPlayerMacOsApi.create', codec,
         binaryMessenger: _binaryMessenger);
     final List<Object?>? replyList =
         await channel.send(<Object?>[arg_msg]) as List<Object?>?;
@@ -312,7 +312,7 @@ class AVFoundationVideoPlayerApi {
 
   Future<void> dispose(TextureMessage arg_msg) async {
     final BasicMessageChannel<Object?> channel = BasicMessageChannel<Object?>(
-        'dev.flutter.pigeon.AVFoundationVideoPlayerApi.dispose', codec,
+        'dev.flutter.pigeon.VideoPlayerMacOsApi.dispose', codec,
         binaryMessenger: _binaryMessenger);
     final List<Object?>? replyList =
         await channel.send(<Object?>[arg_msg]) as List<Object?>?;
@@ -334,7 +334,7 @@ class AVFoundationVideoPlayerApi {
 
   Future<void> setLooping(LoopingMessage arg_msg) async {
     final BasicMessageChannel<Object?> channel = BasicMessageChannel<Object?>(
-        'dev.flutter.pigeon.AVFoundationVideoPlayerApi.setLooping', codec,
+        'dev.flutter.pigeon.VideoPlayerMacOsApi.setLooping', codec,
         binaryMessenger: _binaryMessenger);
     final List<Object?>? replyList =
         await channel.send(<Object?>[arg_msg]) as List<Object?>?;
@@ -356,7 +356,7 @@ class AVFoundationVideoPlayerApi {
 
   Future<void> setVolume(VolumeMessage arg_msg) async {
     final BasicMessageChannel<Object?> channel = BasicMessageChannel<Object?>(
-        'dev.flutter.pigeon.AVFoundationVideoPlayerApi.setVolume', codec,
+        'dev.flutter.pigeon.VideoPlayerMacOsApi.setVolume', codec,
         binaryMessenger: _binaryMessenger);
     final List<Object?>? replyList =
         await channel.send(<Object?>[arg_msg]) as List<Object?>?;
@@ -378,7 +378,7 @@ class AVFoundationVideoPlayerApi {
 
   Future<void> setPlaybackSpeed(PlaybackSpeedMessage arg_msg) async {
     final BasicMessageChannel<Object?> channel = BasicMessageChannel<Object?>(
-        'dev.flutter.pigeon.AVFoundationVideoPlayerApi.setPlaybackSpeed', codec,
+        'dev.flutter.pigeon.VideoPlayerMacOsApi.setPlaybackSpeed', codec,
         binaryMessenger: _binaryMessenger);
     final List<Object?>? replyList =
         await channel.send(<Object?>[arg_msg]) as List<Object?>?;
@@ -400,7 +400,7 @@ class AVFoundationVideoPlayerApi {
 
   Future<void> play(TextureMessage arg_msg) async {
     final BasicMessageChannel<Object?> channel = BasicMessageChannel<Object?>(
-        'dev.flutter.pigeon.AVFoundationVideoPlayerApi.play', codec,
+        'dev.flutter.pigeon.VideoPlayerMacOsApi.play', codec,
         binaryMessenger: _binaryMessenger);
     final List<Object?>? replyList =
         await channel.send(<Object?>[arg_msg]) as List<Object?>?;
@@ -422,7 +422,7 @@ class AVFoundationVideoPlayerApi {
 
   Future<PositionMessage> position(TextureMessage arg_msg) async {
     final BasicMessageChannel<Object?> channel = BasicMessageChannel<Object?>(
-        'dev.flutter.pigeon.AVFoundationVideoPlayerApi.position', codec,
+        'dev.flutter.pigeon.VideoPlayerMacOsApi.position', codec,
         binaryMessenger: _binaryMessenger);
     final List<Object?>? replyList =
         await channel.send(<Object?>[arg_msg]) as List<Object?>?;
@@ -449,7 +449,7 @@ class AVFoundationVideoPlayerApi {
 
   Future<void> seekTo(PositionMessage arg_msg) async {
     final BasicMessageChannel<Object?> channel = BasicMessageChannel<Object?>(
-        'dev.flutter.pigeon.AVFoundationVideoPlayerApi.seekTo', codec,
+        'dev.flutter.pigeon.VideoPlayerMacOsApi.seekTo', codec,
         binaryMessenger: _binaryMessenger);
     final List<Object?>? replyList =
         await channel.send(<Object?>[arg_msg]) as List<Object?>?;
@@ -471,7 +471,7 @@ class AVFoundationVideoPlayerApi {
 
   Future<void> pause(TextureMessage arg_msg) async {
     final BasicMessageChannel<Object?> channel = BasicMessageChannel<Object?>(
-        'dev.flutter.pigeon.AVFoundationVideoPlayerApi.pause', codec,
+        'dev.flutter.pigeon.VideoPlayerMacOsApi.pause', codec,
         binaryMessenger: _binaryMessenger);
     final List<Object?>? replyList =
         await channel.send(<Object?>[arg_msg]) as List<Object?>?;
@@ -493,7 +493,7 @@ class AVFoundationVideoPlayerApi {
 
   Future<void> setMixWithOthers(MixWithOthersMessage arg_msg) async {
     final BasicMessageChannel<Object?> channel = BasicMessageChannel<Object?>(
-        'dev.flutter.pigeon.AVFoundationVideoPlayerApi.setMixWithOthers', codec,
+        'dev.flutter.pigeon.VideoPlayerMacOsApi.setMixWithOthers', codec,
         binaryMessenger: _binaryMessenger);
     final List<Object?>? replyList =
         await channel.send(<Object?>[arg_msg]) as List<Object?>?;

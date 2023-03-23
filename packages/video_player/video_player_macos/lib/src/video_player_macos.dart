@@ -12,12 +12,12 @@ import 'messages.g.dart';
 
 /// An iOS implementation of [VideoPlayerPlatform] that uses the
 /// Pigeon-generated [VideoPlayerApi].
-class AVFoundationVideoPlayer extends VideoPlayerPlatform {
-  final AVFoundationVideoPlayerApi _api = AVFoundationVideoPlayerApi();
+class VideoPlayerMacOs extends VideoPlayerPlatform {
+  final VideoPlayerMacOsApi _api = VideoPlayerMacOsApi();
 
   /// Registers this class as the default instance of [VideoPlayerPlatform].
   static void registerWith() {
-    VideoPlayerPlatform.instance = AVFoundationVideoPlayer();
+    VideoPlayerPlatform.instance = VideoPlayerMacOs();
   }
 
   @override
