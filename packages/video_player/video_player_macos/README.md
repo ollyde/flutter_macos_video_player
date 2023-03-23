@@ -17,7 +17,7 @@ git:
 You can also use
 
 ```
-video_player_macos: 2.0.0
+video_player_macos: 2.0.1
 ```
 
 I would suggest using a cominbation like such in your pub.dev
@@ -34,5 +34,5 @@ flutter_meedu_videoplayer: ^3.2.0
 video_player: ^2.6.0
 chewie: ^1.4.0
 # This library
-video_player_macos: 2.0.0
+video_player_macos: 2.0.1
 ```
